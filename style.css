@@ -51,29 +51,54 @@ a{
 /* Main Content Section */
 .container-1{
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-.container-1 > *{
-        border: solid 1px red;
+        position: relative;
 }
 .main-content-image-mobile{
         display: none;
 }
 .main-content{
-        width: 60%;
+        width: 67.5%;
         height: 100%;
         margin-right: 10%;
+        position: relative;
+        top: 0%;
 }
 .main-content-image-desktop{
         width: 100%;
 }
 
+.main-content-text{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+}
+.main-content-text h1{
+        font-size: 2.5rem;
+        font-weight: 800;
+        width: 50%;
+}
+.content-para-btn{
+        width: 70%;
+}
+.content-para-btn p{
+        line-height: 25px;
+}
+.content-para-btn button{
+        background-color: var(--soft-red);
+        color: var(--off-white);
+        padding: 0.5rem 1.5rem;
+        margin-top: 1rem;
+        font-size: 15px;
+        letter-spacing: 5px;
+}
 /* Side Bar New Section */
 
 .new-section{
+        position: absolute;
+        right: 0;
+        top: 0;
         width: 30%;
+        padding: 1.5rem;
         background-color: var(--very-dark-blue);
         color: var(--off-white);
 }
