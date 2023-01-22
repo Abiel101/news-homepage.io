@@ -20,7 +20,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        outline: solid 1px cyan;
+        /* outline: solid 1px cyan; */
 }
 html{
         font-family: var(--font-family);
@@ -37,6 +37,7 @@ footer{
         position: relative;
         max-width: 1440px ;
         margin: 0 auto;
+        padding: 0 5rem;
 }
 nav{
         display: flex;
@@ -105,12 +106,12 @@ aside{
         background-color: var(--very-dark-blue);
         color: var(--off-white);
 }
-aside h1{
+aside h2{
         color: var(--soft-orange);
         font-size: 2rem;
         margin-bottom: 1.8rem;
 }
-article h2{
+article h3{
         font-size: 1.2rem;
         margin-bottom: 5px;
 }
@@ -130,8 +131,40 @@ article p{
 /* Bottom card section */
 
 .info-articles{
-        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
+        gap: 20px;
+}
+.info-articles article{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+}
+.article__image{
+        width: 100%;
+}
+.article__image img{
+        width: 75px;
+}
+.article__content h2{
+        color: var(--grayish-blue);
+}
+.article__content h3{
+        font-size: 1rem;
+}
+.article__content p{
+        font-size: 0.9rem;
+}
+
+
+/* Buttom Attribution Section */
+.attribution{
+        margin-top: 4rem;
+        text-align: center;
+}
+.attribution a{
+        color: var(--grayish-blue);
+        transition: color 0.5s;
+}
+.attribution a:hover{
+        color: var(--soft-red);
 }
