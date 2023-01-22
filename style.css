@@ -15,25 +15,34 @@
         --font-family: Inter;
 
 }
+
 *{
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        outline: solid 1px cyan;
 }
 html{
         font-family: var(--font-family);
         font-size: var(--font-size);
 }
 body{
-        width: 100%;
-        height: 100vh;
-        padding: 5rem 10rem;
+        /* width: 100%; */
+        height: 100%;
+        padding: 3rem 3rem;
 }
-.navigation{
+main,
+nav,
+footer{
+        position: relative;
+        max-width: 1440px ;
+        margin: 0 auto;
+}
+nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 2rem;
+        margin-bottom: 2rem;
 }
 ul{
         list-style: none;
@@ -49,56 +58,79 @@ a{
 
 
 /* Main Content Section */
-.container-1{
-        width: 100%;
-        position: relative;
+main{
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
 }
-.main-content-image-mobile{
+.main-left-image-mobile{
         display: none;
 }
-.main-content{
-        width: 67.5%;
-        height: 100%;
-        margin-right: 10%;
-        position: relative;
-        top: 0%;
-}
-.main-content-image-desktop{
+.main-left-image-desktop{
         width: 100%;
 }
 
-.main-content-text{
+.main-left-text{
         display: flex;
         justify-content: space-between;
         margin-top: 1rem;
 }
-.main-content-text h1{
-        font-size: 2.5rem;
+.main-left-text h1{
+        font-size: 3.2rem;
         font-weight: 800;
         width: 50%;
 }
-.content-para-btn{
-        width: 70%;
+.main-left-para-btn{
+        width: 50%;
+        height: 100%;
 }
-.content-para-btn p{
+.main-left-para-btn p{
         line-height: 25px;
 }
-.content-para-btn button{
+.main-left-para-btn button{
         background-color: var(--soft-red);
         color: var(--off-white);
-        padding: 0.5rem 1.5rem;
-        margin-top: 1rem;
-        font-size: 15px;
+        padding: 0.8rem 1.5rem;
+        margin-top: 3rem;
+        font-size: 12px;
         letter-spacing: 5px;
+        position: relative;
+        bottom: 0;
 }
 /* Side Bar New Section */
 
-.new-section{
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 30%;
+aside{
         padding: 1.5rem;
         background-color: var(--very-dark-blue);
         color: var(--off-white);
+}
+aside h1{
+        color: var(--soft-orange);
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+}
+article h2{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+}
+article{
+        margin: 1rem 0 2rem 0;
+}
+article p{
+        color: var(--grayish-blue);
+        font-size: 0.8rem;
+        line-height: 23px;
+}
+.info_cards hr{
+        background-color: var(--grayish-blue);
+        height: 1px;
+}
+
+/* Bottom card section */
+.info-articles{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
 }

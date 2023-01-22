@@ -10,33 +10,29 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
+  <nav>
+    <img src="/assets/images/logo.svg" alt="News Main Page Logo">
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New</a></li>
+      <li><a href="#">Popular</a></li>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">Categories</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <!-- Main top navigation and logo section. -->
-    <div class="navigation">
-      <img src="/assets/images/logo.svg" alt="">
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div class="main-left">
+          <!--TODO: Change this code to something different that I learned from youtube or having 2 different images.-->
+        <img class="main-left-image-desktop" src="/assets/images/image-web-3-desktop.jpg" alt="desktop image"> 
+        <img class="main-left-image-mobile" src="/assets/images/image-web-3-mobile.jpg" alt="mobile image"> 
 
-    <div class="container-1">
-      <!-- Main Content -->
-      <div class="main-content">
-
-        <img class="main-content-image-desktop" src="/assets/images/image-web-3-desktop.jpg" alt="desktop image"> 
-        <img class="main-content-image-mobile" src="/assets/images/image-web-3-mobile.jpg" alt="mobile image"> 
-
-        <section class="main-content-text">
+        <section class="main-left-text">
 
           <h1>The Bright Future of Web 3.0?</h1>
 
-          <div class="content-para-btn">
+          <div class="main-left-para-btn">
             <p>
               We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
             But is it really fulfilling its promise?
@@ -48,64 +44,78 @@
       </div>
       
       <!-- What's new section -->
-      <aside class="new-section">
+      <section class="new-section">
         <h2 class="heading_new">New</h2>
         <div class="info_cards">
           <h3>Hydrogen VS Electric Cars</h3>
           <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </div>
+        </article>
+
         <hr>
-        <div class="info_cards">
-          <h3>The Downsides of AI Artistry</h3>
+
+        <article>
+          <h2>The Downsides of AI Artistry</h2>
           <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        </div>
+        </article>
+
         <hr>
-        <div class="info_cards">
-          <h3>Is VC Funding Drying Up?</h3>
+
+        <article>
+          <h2>Is VC Funding Drying Up?</h2>
           <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </div>
-      </aside>
+      </section>
     </div>
     <!-- Bottom information cards -->
     <section class="bottom-cards">
 
-      <div class="bottom_info_cards">
-        <div class="image">
-          <img src="" alt="">
+      <!-- Reviving Retro PCS -->
+      <article>
+        <!-- Image -->
+        <div>
+          <img src="/assets/images/image-retro-pcs.jpg" alt="">
         </div>
-        <div class="content">
+        <!-- Content -->
+        <div>
           <h2>01</h2>
           <h3>Reviving Retro PCs</h3>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
-      </div>
+      </article>
 
-      <div class="bottom_info_cards">
-        <div class="image">
-          <img src="" alt="">
+      <!-- Top 10 laptops 2022 -->
+      <article>
+        <!-- Image -->
+        <div>
+          <img src="/assets/images/image-top-laptops.jpg" alt="">
         </div>
-        <div class="content">
+        <!-- Content -->
+        <div>
           <h2>02</h2>
           <h3>Top 10 Laptops of 2022</h3>
           <p>Our best picks for various needs and budgets.</p>
         </div>
-      </div>
-
-      <div class="bottom_info_cards">
-        <div class="image">
-          <img src="" alt="">
+      </article>
+  
+      <!-- The growth of gaming -->
+      <article>
+        <!-- Image -->
+        <div>
+          <img src="/assets/images/image-gaming-growth.jpg" alt="">
         </div>
-        <div class="content">
+        <!-- Content -->
+        <div>
           <h2>03</h2>
           <h3>The Growth of Gaming</h3>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
-      </div>
-    </section>    
-  </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.abielortega.com">Abiel Ortega</a>.
-  </div>
+      </article>
+    </section>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.abielortega.com">Abiel Ortega</a>.
+    </div>
+  </footer>
 </body>
 </html>
